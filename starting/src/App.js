@@ -1,8 +1,13 @@
+import Productos from "./components/Productos";
+import Listas from "./components/Listas";
+import "./components/styles/Listas.css"
 
 function App() {
   return (
     <div className="App">
         <MyFirstComponent/>
+        <Productos/>
+        <Listas/>
     </div>
   );
 }
