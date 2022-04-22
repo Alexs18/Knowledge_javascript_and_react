@@ -1,11 +1,13 @@
+import { Fragment } from "react";
+
 function Productos() {
 
     const listaProductos = ["Carne", "Manzana", "Pescado"]
-    const ListaProductosJSX = listaProductos.map(producto=> <p>{producto}</p>);
+    const ListaProductosJSX = listaProductos.map((producto, index)=> <p key={index}>{producto}</p>);
 
-    const jsxElements = [ <p>Elemento1</p>, <p>Elemento2</p> ]
+    const jsxElements = [ <p key={"1"}>Elemento1</p>, <p key={"2"}>Elemento2</p> ]
 
-    return <div>
+    return <Fragment>
                 <p>hey guys I'm here</p>
                 <a href="hola">this is me</a>
                 {jsxElements}
@@ -19,7 +21,7 @@ function Productos() {
 
                     })
                 }
-            </div>
+            </Fragment>
 
 }
 

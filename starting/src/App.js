@@ -1,6 +1,6 @@
 import Productos from "./components/Productos";
 import Listas from "./components/Listas";
-import "./components/styles/Listas.css"
+import "./static/styles/Listas.css";
 
 function App() {
   return (
