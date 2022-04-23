@@ -1,14 +1,17 @@
 import Productos from "./components/Productos";
 import Listas from "./components/Listas";
 import "./static/styles/Listas.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-        <MyFirstComponent/>
-        <Productos/>
-        <Listas/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Listas/>} />
+          <Route path="/Productos" element={<Productos/>} />
+          <Route path="/FirstComponent" element={<MyFirstComponent/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
