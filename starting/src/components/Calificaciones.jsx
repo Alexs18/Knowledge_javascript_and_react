@@ -131,29 +131,29 @@ function Calificaciones() {
 
         return <Fragment>
                         <tr  className="TblCalification__Content" key={data.Id}>
-                            <td className="TblCalification__Content__Text ID">{data.Id}</td>
-                            <td className="TblCalification__Content__Text">{data.Nombre}</td>
-                            <td className="TblCalification__Content__Text Calificacion Actuacion">
-                                <p className="Front">{data.Actuacion.Nota}</p>
-                                <p className="Back">{data.Actuacion.Descripcion}</p> 
-                            </td>
-                            <td className="TblCalification__Content__Text Calificacion Actuacion">
-                                <p className="Front">{data.Debate.Nota}</p>
-                                <p className="Back">{data.Debate.Descripcion}</p>
-                            </td>
-                            <td className="TblCalification__Content__Text Calificacion Actuacion">
-                                <p className="Front">{data.Exposicion.Nota}</p>
-                                <p className="Back">{data.Exposicion.Descripcion}</p>
-                            </td>
-                            <td className="TblCalification__Content__Text Calificacion Actuacion">
-                                <p className="Front">{data.Proyecto.Nota}</p>
-                                <p className="Back">{data.Proyecto.Descripcion}</p>
-                            </td>
-                            <td className="TblCalification__Content__Text Calificacion Actuacion">
-                                <p className="Front">{data.Examen.Nota}</p>
-                                <p className="Back">{data.Examen.Descripcion}</p>
-                            </td>
-                        </tr>
+                        <td className="TblCalification__Content__Text ID">{data.Id}</td>
+                        <td className="TblCalification__Content__Text">{data.Nombre}</td>
+                        <td className="TblCalification__Content__Text Calificacion Actuacion">
+                            <p className="Front">{data.Actuacion.Nota}</p>
+                            <p className="Back">{data.Actuacion.Descripcion}</p> 
+                        </td>
+                        <td className="TblCalification__Content__Text Calificacion Actuacion">
+                            <p className="Front">{data.Debate.Nota}</p>
+                            <p className="Back">{data.Debate.Descripcion}</p>
+                        </td>
+                        <td className="TblCalification__Content__Text Calificacion Actuacion">
+                            <p className="Front">{data.Exposicion.Nota}</p>
+                            <p className="Back">{data.Exposicion.Descripcion}</p>
+                        </td>
+                        <td className="TblCalification__Content__Text Calificacion Actuacion">
+                            <p className="Front">{data.Proyecto.Nota}</p>
+                            <p className="Back">{data.Proyecto.Descripcion}</p>
+                        </td>
+                        <td className="TblCalification__Content__Text Calificacion Actuacion">
+                            <p className="Front">{data.Examen.Nota}</p>
+                            <p className="Back">{data.Examen.Descripcion}</p>
+                        </td>
+                    </tr>
                </Fragment>
 
     });
@@ -172,7 +172,12 @@ function Calificaciones() {
                             </tr>
                         </tbody>
                         <tbody>
-                            {NotasEstudiantes}
+                            
+                            {
+                            
+                                NotasEstudiantes
+
+                            }
                         </tbody>
                     </table>
             </Fragment>

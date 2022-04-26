@@ -4,6 +4,7 @@ import "./static/styles/Listas.css";
 import "./static/styles/Tabla.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Calificaciones from "./components/Calificaciones";
+import Calificaciones2 from "./components/Calificaciones2";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/Productos" element={<Productos/>} />
           <Route path="/FirstComponent" element={<MyFirstComponent/>} />
           <Route path="/Calificaciones" element={<Calificaciones/>} />
+          <Route path="/Calificaciones2" element={<Calificaciones2/>} />
       </Routes>
     </BrowserRouter>
   );
