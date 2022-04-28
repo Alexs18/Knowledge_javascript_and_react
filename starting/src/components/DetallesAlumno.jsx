@@ -1,10 +1,11 @@
-
-function DetallesAlumno(props) {
+import Menu from "./Menu";
+function DetallesAlumno({notas, alumnos, jsx}) {
    
-    const {notas} = props;
+    console.log(alumnos, jsx)
+    //podemos hacerlo de esta forma, pero tambien podemos hacer inyeccion de dependencia
+    //const {notas} = props;
 
-    //Definir funcion para la cuenta de valores
-    console.log(notas.Nombre);
+    //Definir funcion para la cuenta de valores><
     let CalificacioFinal = 0;
     function CalcularValores(notas1) {
         alert("estamos calculando su promedio señor", +  notas1.Nombre);
@@ -28,6 +29,13 @@ function DetallesAlumno(props) {
                     <button onClick={CalcularValores}>Precioname</button>
                 </td>
             </tr>
+            <Menu>
+                <ul>
+                    <li>
+                        Linux
+                    </li>
+                </ul>
+            </Menu>
         </>
     )
 

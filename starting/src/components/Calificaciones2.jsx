@@ -1,5 +1,6 @@
 import { Fragment } from "react"
 import DetallesAlumno from "./DetallesAlumno"
+import Menu from "./Menu"
 
 let Notas8vo = [
     {
@@ -17,6 +18,14 @@ let Notas8vo = [
 function Calificaciones2() {
     return (
         <>
+
+            <Menu>
+                <ul>
+                    <li>
+                        Hola
+                    </li>
+                </ul>
+            </Menu>
             <table>
                 <thead>
                     <tr>
@@ -27,7 +36,7 @@ function Calificaciones2() {
                 </thead>
                 <tbody>
                     {Notas8vo.map(notas=>(
-                            <DetallesAlumno notas={notas}></DetallesAlumno>
+                            <DetallesAlumno notas={notas} alumnos={["Alexis", "Karen", "Dayana"]} jsx={<div><h1>Hola</h1><p>Hola2</p></div>} ></DetallesAlumno>
                         )
                     )}
                 </tbody>
