@@ -5,6 +5,7 @@ import "./static/styles/Tabla.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Calificaciones from "./components/Calificaciones";
 import Calificaciones2 from "./components/Calificaciones2";
+import Contador from "./components/Contador";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/FirstComponent" element={<MyFirstComponent/>} />
           <Route path="/Calificaciones" element={<Calificaciones/>} />
           <Route path="/Calificaciones2" element={<Calificaciones2/>} />
+          <Route path="/Contador" element={<Contador/>} />
+
       </Routes>
     </BrowserRouter>
   );
