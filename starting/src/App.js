@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Calificaciones from "./components/Calificaciones";
 import Calificaciones2 from "./components/Calificaciones2";
 import Contador from "./components/Contador";
+import Estado from "./components/Estado";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Calificaciones" element={<Calificaciones/>} />
           <Route path="/Calificaciones2" element={<Calificaciones2/>} />
           <Route path="/Contador" element={<Contador/>} />
+          <Route path="/Estado" element={<Estado/>} />
 
       </Routes>
     </BrowserRouter>
