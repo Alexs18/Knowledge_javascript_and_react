@@ -7,6 +7,7 @@ import Calificaciones from "./components/Calificaciones";
 import Calificaciones2 from "./components/Calificaciones2";
 import Contador from "./components/Contador";
 import Estado from "./components/Estado";
+import "./App.css"
 
 function App() {
   return (
