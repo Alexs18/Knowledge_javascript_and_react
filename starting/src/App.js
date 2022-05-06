@@ -7,6 +7,8 @@ import Calificaciones from "./components/Calificaciones";
 import Calificaciones2 from "./components/Calificaciones2";
 import Contador from "./components/Contador";
 import Estado from "./components/Estado";
+import UseEffet from "./components/UseEffet";
+
 import "./App.css"
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           <Route path="/Calificaciones2" element={<Calificaciones2/>} />
           <Route path="/Contador" element={<Contador/>} />
           <Route path="/Estado" element={<Estado/>} />
+          <Route path="/UseEffect" element={<UseEffet/>} />
 
       </Routes>
     </BrowserRouter>
