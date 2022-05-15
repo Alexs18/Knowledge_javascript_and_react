@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import "./Styles.css"
+import "./Styles.css";
+import EstadoSimple from './EstadoSimple';
 
 export default function Estados() {
   
@@ -31,12 +32,18 @@ export default function Estados() {
     
 
     const ChangeIndex =()=>{
-        setIndex(index+1)
-        console.log(value);
+        
+        if (index < value.length-1) {
+            setIndex(index+1)
+            console.log(value);   
+        }
     }
     const NoChangeIndex =()=>{
-        setIndex(index-1)
-        console.log(value);
+        if (index> 0) {
+            console.log(index, value.length)
+            setIndex(index-1)
+            console.log(value);   
+        }
     }
 
     return (
@@ -59,6 +66,10 @@ export default function Estados() {
             <button onClick={ChangeIndex}>after</button>
             <button onClick={NoChangeIndex}>before</button>
         </div>
+        {/**Estado simple*/}
+        <EstadoSimple>
+
+        </EstadoSimple>
     </>
   )
 }
