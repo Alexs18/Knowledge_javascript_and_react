@@ -9,6 +9,7 @@ import Contador from "./components/Contador";
 import Estado from "./components/Estado";
 import UseEffet from "./components/UseEffet";
 import Context from "./components/Contexts/Context";
+import Calltoprops from "./props/calltoprops";
 
 import "./App.css"
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Estado" element={<Estado/>} />
           <Route path="/UseEffect" element={<UseEffet/>} />
           <Route path="/Contexto" element={<Context/>}/>
+          <Route path="/Props" element={<Calltoprops/>}/>
 
       </Routes>
     </BrowserRouter>
