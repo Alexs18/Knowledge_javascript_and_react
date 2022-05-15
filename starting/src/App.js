@@ -8,6 +8,7 @@ import Calificaciones2 from "./components/Calificaciones2";
 import Contador from "./components/Contador";
 import Estado from "./components/Estado";
 import UseEffet from "./components/UseEffet";
+import Context from "./components/Contexts/Context";
 
 import "./App.css"
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Contador" element={<Contador/>} />
           <Route path="/Estado" element={<Estado/>} />
           <Route path="/UseEffect" element={<UseEffet/>} />
+          <Route path="/Contexto" element={<Context/>}/>
 
       </Routes>
     </BrowserRouter>
