@@ -34,15 +34,12 @@ export default function Estados() {
     const ChangeIndex =()=>{
         
         if (index < value.length-1) {
-            setIndex(index+1)
-            console.log(value);   
+            setIndex(index+1) 
         }
     }
     const NoChangeIndex =()=>{
         if (index> 0) {
-            console.log(index, value.length)
-            setIndex(index-1)
-            console.log(value);   
+            setIndex(index-1)   
         }
     }
 
