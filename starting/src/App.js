@@ -9,7 +9,8 @@ import Contador from "./components/Contador";
 import Estado from "./components/Estado";
 import UseEffet from "./components/UseEffet";
 import Context from "./components/Contexts/Context";
-import Calltoprops from "./props/calltoprops";
+import Calltoprops from "./Concepts/props/calltoprops";
+import Estados from "./Concepts/Hooks/Estados";
 
 import "./App.css"
 
@@ -27,6 +28,8 @@ function App() {
           <Route path="/UseEffect" element={<UseEffet/>} />
           <Route path="/Contexto" element={<Context/>}/>
           <Route path="/Props" element={<Calltoprops/>}/>
+          <Route path="/Estados1" element={<Estados/>}/>
+
 
       </Routes>
     </BrowserRouter>
