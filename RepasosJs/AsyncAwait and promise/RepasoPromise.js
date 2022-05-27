@@ -1,0 +1,1 @@
+const Promesa = new Promise()
