@@ -37,7 +37,7 @@ const asignaturas = [
     },
     {
         name:"Administración de unidades informaticas",
-        estado:"Aprobado"
+        estado:"Reprobado"
     },
     {
         name:"Gestión de proyectos",
@@ -45,7 +45,7 @@ const asignaturas = [
     },
     {
         name:"Auditoria",
-        estado:"Aprobado"
+        estado:"Reprobado"
     },
 ]
 
